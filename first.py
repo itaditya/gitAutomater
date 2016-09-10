@@ -17,8 +17,8 @@ for cmd in cmds:
         print "push"
         process = subprocess.Popen(
             query, stdout=subprocess.PIPE, stdin=subprocess.PIPE)
-        process.stdin.write("itaditya")
-        process.stdin.write("9911502984.Ad")
+        # process.stdin.write("itaditya")
+        # process.stdin.write("9911502984.Ad")
     else:
         process = subprocess.Popen(query, stdout=subprocess.PIPE)
     output = process.communicate()[0]
