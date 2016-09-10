@@ -1,6 +1,7 @@
 import subprocess
-process = subprocess.Popen(
-    "git config credential.helper store", stdout=subprocess.PIPE, shell=True)
+
+# process = subprocess.Popen(
+# "git config credential.helper store", stdout=subprocess.PIPE, shell=True)
 
 cmds = [
     "git add .",
