@@ -12,6 +12,7 @@ for cmd in cmds:
     print ">>", cmd
     query = cmd.split()
     # process = subprocess.Popen(query, stdout=subprocess.PIPE)
+    process = 0
     if(query[1] == "push"):
         print "push"
         process = subprocess.Popen(
@@ -22,3 +23,5 @@ for cmd in cmds:
         process = subprocess.Popen(query, stdout=subprocess.PIPE)
     output = process.communicate()[0]
     print output
+
+print 'All done!'
