@@ -17,12 +17,7 @@ else:
     cmds[1] += "_".join(commitMessage.split())
     for cmd in cmds:
         query = cmd.split()
-        # process = subprocess.Popen(query, stdout=subprocess.PIPE)
-        if(query[1] == "push"):
-            process = subprocess.Popen(
-                query, stdout=subprocess.PIPE, stdin=subprocess.PIPE)
-        else:
-            process = subprocess.Popen(query, stdout=subprocess.PIPE)
+        process = subprocess.Popen(query, stdout=subprocess.PIPE)
         output = process.communicate()[0]
         print output
 
