@@ -13,6 +13,7 @@ for cmd in cmds:
     query = cmd.split()
     # process = subprocess.Popen(query, stdout=subprocess.PIPE)
     if(query[1] == "push"):
+        print "push"
         process = subprocess.Popen(
             query, stdout=subprocess.PIPE, stdin=subprocess.PIPE)
         process.communicate("itaditya")
