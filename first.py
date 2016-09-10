@@ -4,7 +4,7 @@ cmds = [
     "git add .",
     "git commit -m ",
     "git status",
-    "git push",
+    "git push origin master",
 ]
 commitMessage = "'" + raw_input().strip() + "'"
 cmds[1] += "_".join(commitMessage.split())
